@@ -1,0 +1,16 @@
+<html><head><title>Left Frame</title>
+<body>
+
+<script>
+document.write("My name is " + parent.frames['left'].name)
+</script>
+
+<form>
+<input type=button value="How are you, right frame?"
+onClick="parent.frames['right'].document.write('Fine, thanks.')">
+<br>
+<input type=button value="How are you, parent?"
+onClick="parent.document.write('Fine, thanks.')">
+
+</form>
+</body></html>
